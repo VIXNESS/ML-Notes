@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {0.1}主要内容}{2}% 
+\contentsline {section}{\numberline {0.2}所需知识}{2}% 
+\contentsline {subsection}{\numberline {0.2.1}线性代数}{2}% 
+\contentsline {subsection}{\numberline {0.2.2}概率论}{2}% 
+\contentsline {subsection}{\numberline {0.2.3}信息论}{2}% 
+\contentsline {chapter}{\numberline {1}数据处理}{3}% 
+\contentsline {section}{\numberline {1.1}特征缩放(Feature Scaling)}{3}% 
+\contentsline {section}{\numberline {1.2}数据降维(Dimensionality Reduction)}{3}% 
+\contentsline {chapter}{\numberline {2}模型定义}{4}% 
+\contentsline {chapter}{\numberline {3}最优化}{5}% 
+\contentsline {chapter}{\numberline {4}模型评估}{6}% 
