@@ -1,5 +1,6 @@
 \documentclass[oneside]{book}
 \usepackage[utf8]{inputenc}
+\usepackage[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}
 \usepackage{xeCJK}
 \usepackage{bm}
 \usepackage{geometry}
@@ -19,7 +20,7 @@
 	\end{titlepage}
 	\tableofcontents
 	\setcounter{chapter}{0}
-	\renewcommand{\thechapter}{\roman{chapter}}
+	\renewcommand{\thechapter}{\Roman{chapter}}
 	\chapter{主要内容}
 			\begin{enumerate} 
 				\item 特征处理: 对数据进行降维(Dimensionality Reduction) 和特征缩放(Feature Scaling) 等.
