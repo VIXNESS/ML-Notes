@@ -1,0 +1,116 @@
+\documentclass[oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{xeCJK}
+\usepackage{bm}
+\usepackage{geometry}
+\usepackage{fontspec} 
+\usepackage[normalem]{ulem}
+\setCJKmainfont{PingFangSC-Regular}
+\setCJKmonofont{PingFangSC-Regular}
+\font\titlteFont=NovaMono at 40pt
+\font\authorFont=NovaMono at 24pt
+\font\NovaMonoFont=NovaMono
+\title{\titlteFont Machine Learning Notes}
+\author{\authorFont{Jiang Tao}\\ \NovaMonoFont{vix2018@gmail.com}}
+\date{\NovaMonoFont 2019}
+\begin{document}
+	\begin{titlepage}
+		\maketitle
+	\end{titlepage}
+	\tableofcontents
+	\setcounter{chapter}{0}
+	\renewcommand{\thechapter}{\roman{chapter}}
+	\chapter{主要内容}
+			\begin{enumerate} 
+				\item 特征处理: 对数据进行降维(Dimensionality Reduction) 和特征缩放(Feature Scaling) 等.
+				\item 模型: 线性模型, 神经网络, SVM 等.
+				\item 定义损失函数: 根据不同的模型, 找出适合它的损失函数.
+				\item 最优化: 梯度下降等.
+				\item 模型评估: 对模型进行评估与预防过拟合.
+				\item 模型分析: 使用一些手段对某个模型(DNN)进行解剖分析.(待定)
+			\end{enumerate}
+	\chapter{所需知识}
+		\section{线性代数}
+			\subsection{矩阵分解}
+				\subsubsection{Eigen-Value Decomposition}
+					矩阵分解为由其特征值和特征向量表示的矩阵之积.即:
+					$$\boldsymbol{A} = \lambda \boldsymbol{u}$$
+				\subsubsection{Singular-Value Decomposition}
+					SVD是线性代数中一种重要的矩阵分解, 其结果可以直接用于PCA.	
+				\subsubsection{Non-Negative Matrix Factorization}	
+		\section{概率论}
+			\subsection{多维正太分布(Multivariate Gaussian Distribution)}	
+				若$N$维随机变量$\boldsymbol{X}= [X_{1}, X_{2} ... X_{n}]^{T}$服从多元正太分布, 且其协方差矩
+				阵非奇异, 则PDF可表示为:
+			\subsection{Expectation-Maximization algorithm}
+				最大期望算法, 可用于计算PPCA.
+				
+				$$f_{\boldsymbol{X}}(x_{1}, ... , x_{n}) = \frac{1}{\sqrt{(2\pi)^{n}|\boldsymbol{\Sigma}|}}\exp{\left(-\frac{1}{2}(\boldsymbol{X}-\boldsymbol{\mu})^{T}\boldsymbol{\Sigma}^{-1}(\boldsymbol{X}-\boldsymbol{\mu})\right)}$$
+				其中$\boldsymbol{\Sigma}$是协方差矩阵, $\boldsymbol{\mu}$是均值.
+		
+		\section{信息论}
+			\subsection{信息熵}
+			\subsection{交叉熵}
+			\subsection{相对熵}
+	\setcounter{chapter}{0}
+	\renewcommand{\thechapter}{\arabic{chapter}}
+	\chapter{特征处理}
+		\section{特征缩放(Feature Scaling)}
+			\subsection{作用}
+				由于各个特征的范围不一, 导致在某些模型下训练效果极差. 使用特征缩放有助于模型的训练.
+			\subsection{方法}
+				\subsubsection{Min-Max Normalization}
+					$$x'_i = \frac{x_i - \min{(X)}}{\max{(X)} - \min{(X)}},~x_i\in X$$
+				\subsubsection{Mean Normalization}
+					$$x'_i = \frac{x_i - average(X)}{\max{(X)} - \min{(X)}},~x_i\in X$$
+				\subsubsection{Standardization}
+					$$x'_i = \frac{x_i - \mu}{\sigma},~x_{i}\in X$$
+				\subsubsection{Scaling to Unit Length}
+				 	$$x'_i = \frac{x_{i}}{||x_{i}||}, ~x_i \in X$$
+		\section{降维(Dimensionality Reduction)}
+			\subsection{特征选择(Feature Selection)}
+				\subsubsection{Pooling}
+					作用: 应对图片的放缩, 旋转, 等线性变换.
+					方法:
+					\begin{itemize}
+						\item Max Pooling
+						\item Average Pooling
+						\item Weighted average based on the distance from the central pixel
+					\end{itemize}
+				\subsubsection{手动特征选择}
+					根据实际问题, 经验自行判断某一特征的必要性.
+				\subsection{主成成分分析(Principal Component Analysis)}
+					利用数学方法降维可以分为线性降维(Linear Dimensionality Reduction)与非线性降维(Nonlinear Dimensionality Reduction), 不仅仅是PCA的变种会有非线性降维, 其他的非PCA方法也有非线性的方法. 今后若要寻找其他数学降维方法, 可根据这两个方向寻找.
+					\subsubsection{PCA \NovaMonoFont{[Linear]}}
+					PCA的思想: 通过对协方差矩阵进行特征分解, 以得出数据的主成分(即特征向量) 与它们的权值(即特征值).在原数据中除掉最小的特征值所对应的成分, 那么所得的低维度数据必定失去讯息最少.\\\\
+					一个正交化线性变换，把数据变换到一个新的坐标系统中, 使得这一数据的任何投影的第一大方差
+					在第一个坐标(称为第一主成分) 上, 第二大方差在第二个坐标(第二主成分) 上, 依次类推.\\ 
+					投影至低维超平面上的点会很分开(方差最大).\\ \\
+					PCA的数学推导:\\
+					\subsubsection{PPCA(Probability Principal Component Analysis) \NovaMonoFont{[Linear]}}
+					PCA从概率的方向利用EM进行推导, 就是PCA. 
+					\subsubsection{核化线性降维 Kernel PCA \NovaMonoFont{[Nonlinear]}}
+					一种非线性的PCA方法(类似于将高维空间中的点按照一个形状拉直?)
+					\subsubsection{Graph-based kernel PCA \NovaMonoFont{[Nonlinear]}}
+					
+				
+				\subsection{自动编码机(Auto-Encoder)}
+				\subsection{流形学习 (Manifold Learning) }
+					\subsubsection{等度量映射 (Isometric Mapping)  \NovaMonoFont{[Nonlinear]}}
+					\subsubsection{局部线性嵌入 (Locally Linear Embedding)  \NovaMonoFont{[Linear]}}
+			\subsection{多维缩放 (Multiple Dimensional Scaling)}
+			\subsection{度量学习 (Metric Learning)}
+			
+			
+		
+	\chapter{模型}
+		对于模型的描述主要分为: 模型的思想、模型的使用场景、模型的算法实现、模型的数学解释、模型的优缺点
+		\section{Multilayer Perceptron}
+		\section{Latent Dirichlet Allocation}
+		\section{Latent Semantic Analysis}
+		\section{Probability Latent Semantic Analysis}
+		\section{Gaussian Discriminant Analysis}
+	\chapter{最优化}
+		\section{SGD}
+	\chapter{模型评估}
+\end{document}
