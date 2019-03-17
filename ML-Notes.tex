@@ -21,27 +21,38 @@
 	\tableofcontents
 	\setcounter{chapter}{0}
 	\renewcommand{\thechapter}{\Roman{chapter}}
-	\chapter{主要内容}
-			\begin{enumerate} 
-				\item 特征处理: 对数据进行降维(Dimensionality Reduction) 和特征缩放(Feature Scaling) 等.
-				\item 模型: 线性模型, 神经网络, SVM 等.
-				\item 定义损失函数: 根据不同的模型, 找出适合它的损失函数.
-				\item 优化器: 梯度下降等.
-				\item 模型评估: 对模型进行评估与预防过拟合.
-				\item 模型分析: 使用一些手段对某个模型(DNN)进行解剖分析.(待定)
-			\end{enumerate}
 	\chapter{所需知识}
 		\section{线性代数}
+			\subsection{正定矩阵 \&  半正定矩阵}
+				\subsubsection{正定矩阵}
+				$$\forall\boldsymbol{x} > 0,~\boldsymbol{xAx^T}>0$$
+				则称矩阵$\boldsymbol{A}$ 为正定矩阵, 其中$\boldsymbol{A}_{n\times n},~\boldsymbol{~A = A^T},~dim(\boldsymbol{x})=n$.
+				\subsubsection{半正定矩阵}
+				$$\forall\boldsymbol{x} > 0,~\boldsymbol{xAx^T}\geq0$$
+				则称矩阵$\boldsymbol{A}$ 为半正定矩阵, 其中$\boldsymbol{A}_{n\times n},~\boldsymbol{~A = A^T},~dim(\boldsymbol{x})=n$.
+			\subsection{共轭转置}
+				把矩阵转置后，再把每一个数换成它的共轭复数(实数部分相同而虚数部分互为相反数的两个复数)。
+				$A$的共轭转置记作$A^H$(不写$A^*$的原因是,会和伴随矩阵混淆).
+			\subsection{幺正矩阵 Unitary Matrix}
+				若$UU^H=E=U^HU$,称$U$为幺正矩阵, 其中$U^H$为$U$的共轭转置矩阵.
 			\subsection{矩阵分解}
 				\subsubsection{Eigen-Value Decomposition}
 					矩阵分解为由其特征值和特征向量表示的矩阵之积.即:
 					$$\boldsymbol{A} = \lambda \boldsymbol{u}$$
 				\subsubsection{Singular-Value Decomposition}
-					SVD是线性代数中一种重要的矩阵分解, 其结果可以直接用于PCA.	
-				\subsubsection{Non-Negative Matrix Factorization}	
+					分解结果:
+					$$A_{m\times n}=U_{m\times m}\Sigma_{m\times n} V^H_{n\times n}$$
+					$U_{m\times m}$ 为 $M^HM$的特征向量组, $U$是正幺矩阵.\\
+					$\Sigma_{m\times n}$ 中的对角元素$\Sigma_{i,i}$为奇异值, 它们是$M^HM, MM^H$的特征值的非负平方根.\\
+					$V_{n\times n}$是$MM^H$的特征向量组 , $V$是正幺矩阵.\\
+					奇异值计算:
+					当且仅当存在单位向量$r_n, l_m$, 非负实数$\mu$
+					$$M_{m\times n}r_{n} = \mu l_{m}~and~M^H_{m\times n} l_{m} = \mu r_{n}$$
+					其中,$r$为$M$的右奇异向量, $l$为$M$的左奇异向量.
+	
 		\section{概率论}
-			\subsection{多维正太分布(Multivariate Gaussian Distribution)}	
-				若$N$维随机变量$\boldsymbol{X}= [X_{1}, X_{2} ... X_{n}]^{T}$服从多元正太分布, 且其协方差矩
+			\subsection{多维正态分布(Multivariate Gaussian Distribution)}	
+				若$N$维随机变量$\boldsymbol{X}= [X_{1}, X_{2} ... X_{n}]^{T}$服从多元正态分布, 且其协方差矩
 				阵非奇异, 则PDF可表示为:				
 				$$f_{\boldsymbol{X}}(x_{1}, ... , x_{n}) = \frac{1}{\sqrt{(2\pi)^{n}|\boldsymbol{\Sigma}|}}\exp{\left(-\frac{1}{2}(\boldsymbol{X}-\boldsymbol{\mu})^{T}\boldsymbol{\Sigma}^{-1}(\boldsymbol{X}-\boldsymbol{\mu})\right)}$$
 				其中$\boldsymbol{\Sigma}$是协方差矩阵, $\boldsymbol{\mu}$是均值.
@@ -49,8 +60,11 @@
 				最大期望(EM)算法, 可用于计算PPCA.
 		\section{信息论}
 			\subsection{信息熵}
+			*
 			\subsection{交叉熵}
+			*
 			\subsection{相对熵}
+			*
 	\setcounter{chapter}{0}
 	\renewcommand{\thechapter}{\arabic{chapter}}
 	\chapter{特征处理}
@@ -69,6 +83,9 @@
 			\section{特征选择(Feature Selection)}
 				\subsection{手动特征选择}
 					根据实际问题, 经验自行判断某一特征的必要性.
+				\subsection{Non-Negative Matrix Factorization}
+
+
 				\subsection{Pooling}
 					作用: 应对图片的放缩, 旋转, 等线性变换.\\
 					方法: \dots

@@ -1,112 +1,115 @@
-\BOOKMARK [0][-]{chapter.1}{主要内容}{}% 1
-\BOOKMARK [0][-]{chapter.2}{所需知识}{}% 2
-\BOOKMARK [1][-]{section.2.1}{线性代数}{chapter.2}% 3
-\BOOKMARK [2][-]{subsection.2.1.1}{矩阵分解}{section.2.1}% 4
-\BOOKMARK [1][-]{section.2.2}{概率论}{chapter.2}% 5
-\BOOKMARK [2][-]{subsection.2.2.1}{多维正太分布\(Multivariate Gaussian Distribution\)}{section.2.2}% 6
-\BOOKMARK [2][-]{subsection.2.2.2}{Expectation-Maximization\040algorithm}{section.2.2}% 7
-\BOOKMARK [1][-]{section.2.3}{信息论}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.3.1}{信息熵}{section.2.3}% 9
-\BOOKMARK [2][-]{subsection.2.3.2}{交叉熵}{section.2.3}% 10
-\BOOKMARK [2][-]{subsection.2.3.3}{相对熵}{section.2.3}% 11
-\BOOKMARK [0][-]{chapter.1}{特征处理}{}% 12
-\BOOKMARK [1][-]{section.1.1}{特征缩放\(Feature Scaling\)}{chapter.1}% 13
-\BOOKMARK [2][-]{subsection.1.1.1}{作用}{section.1.1}% 14
-\BOOKMARK [2][-]{subsection.1.1.2}{方法}{section.1.1}% 15
-\BOOKMARK [1][-]{section.1.2}{特征选择\(Feature Selection\)}{chapter.1}% 16
-\BOOKMARK [2][-]{subsection.1.2.1}{手动特征选择}{section.1.2}% 17
-\BOOKMARK [2][-]{subsection.1.2.2}{Pooling}{section.1.2}% 18
-\BOOKMARK [2][-]{subsection.1.2.3}{过滤式选择}{section.1.2}% 19
-\BOOKMARK [2][-]{subsection.1.2.4}{包裹式选择}{section.1.2}% 20
-\BOOKMARK [2][-]{subsection.1.2.5}{稀疏表示 \(Sparse Representation\)}{section.1.2}% 21
-\BOOKMARK [2][-]{subsection.1.2.6}{字典学习 \(Dictionary Learning\)}{section.1.2}% 22
-\BOOKMARK [2][-]{subsection.1.2.7}{压缩感知 \(Compressed Sensing\)}{section.1.2}% 23
-\BOOKMARK [1][-]{section.1.3}{降维\(Dimensionality Reduction\)}{chapter.1}% 24
-\BOOKMARK [2][-]{subsection.1.3.1}{主成成分分析\(Principal Component Analysis\)}{section.1.3}% 25
-\BOOKMARK [2][-]{subsection.1.3.2}{自动编码机\(Auto-Encoder\)}{section.1.3}% 26
-\BOOKMARK [2][-]{subsection.1.3.3}{流形学习 \(Manifold Learning\) }{section.1.3}% 27
-\BOOKMARK [2][-]{subsection.1.3.4}{多维缩放 \(Multiple Dimensional Scaling\)}{section.1.3}% 28
-\BOOKMARK [2][-]{subsection.1.3.5}{度量学习 \(Metric Learning\)}{section.1.3}% 29
-\BOOKMARK [0][-]{chapter.2}{模型}{}% 30
-\BOOKMARK [1][-]{section.2.1}{Linear\040Model}{chapter.2}% 31
-\BOOKMARK [1][-]{section.2.2}{Decision\040Tree}{chapter.2}% 32
-\BOOKMARK [1][-]{section.2.3}{Neural\040Network}{chapter.2}% 33
-\BOOKMARK [2][-]{subsection.2.3.1}{Multilayer\040Perceptron}{section.2.3}% 34
-\BOOKMARK [1][-]{section.2.4}{Support\040Vector\040Machine}{chapter.2}% 35
-\BOOKMARK [1][-]{section.2.5}{K-neighbors}{chapter.2}% 36
-\BOOKMARK [1][-]{section.2.6}{Bayesian}{chapter.2}% 37
-\BOOKMARK [1][-]{section.2.7}{Gaussian\040Discriminant\040Analysis}{chapter.2}% 38
-\BOOKMARK [1][-]{section.2.8}{\(Probabilistic\)\040Graphical\040Models}{chapter.2}% 39
-\BOOKMARK [1][-]{section.2.9}{Latent\040Dirichlet\040Allocation\040[Topic\040Model]}{chapter.2}% 40
-\BOOKMARK [1][-]{section.2.10}{Latent\040Semantic\040Analysis\040[Topic\040Model]}{chapter.2}% 41
-\BOOKMARK [1][-]{section.2.11}{Probability\040Latent\040Semantic\040Analysis\040[Topic\040Model]}{chapter.2}% 42
-\BOOKMARK [0][-]{chapter.3}{损失函数}{}% 43
-\BOOKMARK [1][-]{section.3.1}{Regression\040Losses}{chapter.3}% 44
-\BOOKMARK [2][-]{subsection.3.1.1}{Mean\040Square\040Error}{section.3.1}% 45
-\BOOKMARK [2][-]{subsection.3.1.2}{Mean\040Absolute\040Error}{section.3.1}% 46
-\BOOKMARK [2][-]{subsection.3.1.3}{Mean\040Bias\040Error}{section.3.1}% 47
-\BOOKMARK [2][-]{subsection.3.1.4}{Logarithm\040of\040the\040hyperbolic\040cosin}{section.3.1}% 48
-\BOOKMARK [2][-]{subsection.3.1.5}{Huber\040Loss}{section.3.1}% 49
-\BOOKMARK [1][-]{section.3.2}{Classification\040Losses}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.2.1}{Hinge\040loss}{section.3.2}% 51
-\BOOKMARK [2][-]{subsection.3.2.2}{Logistic\040loss}{section.3.2}% 52
-\BOOKMARK [2][-]{subsection.3.2.3}{Exponential\040loss}{section.3.2}% 53
-\BOOKMARK [2][-]{subsection.3.2.4}{Cross\040Entropy\040Loss}{section.3.2}% 54
-\BOOKMARK [2][-]{subsection.3.2.5}{Multi\040class\040SVM\040Loss}{section.3.2}% 55
-\BOOKMARK [1][-]{section.3.3}{Relative\040Entropy}{chapter.3}% 56
-\BOOKMARK [1][-]{section.3.4}{Regularization}{chapter.3}% 57
-\BOOKMARK [0][-]{chapter.4}{激活函数}{}% 58
-\BOOKMARK [1][-]{section.4.1}{Sigmoid}{chapter.4}% 59
-\BOOKMARK [1][-]{section.4.2}{Hard\040Sigmoid}{chapter.4}% 60
-\BOOKMARK [1][-]{section.4.3}{Softmax}{chapter.4}% 61
-\BOOKMARK [1][-]{section.4.4}{Exponential\040Linear\040Unit}{chapter.4}% 62
-\BOOKMARK [1][-]{section.4.5}{Scaled\040Exponential\040Linear\040Unit}{chapter.4}% 63
-\BOOKMARK [1][-]{section.4.6}{Rectified\040Linear\040Unit}{chapter.4}% 64
-\BOOKMARK [1][-]{section.4.7}{Identity\040Activation\040Function}{chapter.4}% 65
-\BOOKMARK [1][-]{section.4.8}{Softplus}{chapter.4}% 66
-\BOOKMARK [1][-]{section.4.9}{Softsign}{chapter.4}% 67
-\BOOKMARK [1][-]{section.4.10}{Hyperbolic\040Tangent}{chapter.4}% 68
-\BOOKMARK [1][-]{section.4.11}{Exponential\040\(base\040e\)}{chapter.4}% 69
-\BOOKMARK [0][-]{chapter.5}{噪音}{}% 70
-\BOOKMARK [1][-]{section.5.1}{Gaussian\040Noise}{chapter.5}% 71
-\BOOKMARK [1][-]{section.5.2}{Gaussian\040Dropout}{chapter.5}% 72
-\BOOKMARK [1][-]{section.5.3}{Alpha\040Dropout}{chapter.5}% 73
-\BOOKMARK [0][-]{chapter.6}{初始化}{}% 74
-\BOOKMARK [1][-]{section.6.1}{Normal\040distribution}{chapter.6}% 75
-\BOOKMARK [1][-]{section.6.2}{Uniform\040distribution}{chapter.6}% 76
-\BOOKMARK [1][-]{section.6.3}{Truncated\040Normal\040distribution}{chapter.6}% 77
-\BOOKMARK [1][-]{section.6.4}{Variance\040Scaling}{chapter.6}% 78
-\BOOKMARK [1][-]{section.6.5}{Random\040Orthogonal\040Matrix}{chapter.6}% 79
-\BOOKMARK [0][-]{chapter.7}{优化器}{}% 80
-\BOOKMARK [1][-]{section.7.1}{Mini-batch\040Gradient\040descent}{chapter.7}% 81
-\BOOKMARK [1][-]{section.7.2}{Stochastic\040Gradient\040Descent}{chapter.7}% 82
-\BOOKMARK [2][-]{subsection.7.2.1}{Implicit-updates\040SGD}{section.7.2}% 83
-\BOOKMARK [2][-]{subsection.7.2.2}{Averaged\040SGD}{section.7.2}% 84
-\BOOKMARK [2][-]{subsection.7.2.3}{Kalman-Based\040SGD}{section.7.2}% 85
-\BOOKMARK [2][-]{subsection.7.2.4}{Momentum}{section.7.2}% 86
-\BOOKMARK [2][-]{subsection.7.2.5}{Nesterov\040Accelerated\040Gradient\040[Momentum]}{section.7.2}% 87
-\BOOKMARK [2][-]{subsection.7.2.6}{Adagrad\040[Adaptive]}{section.7.2}% 88
-\BOOKMARK [2][-]{subsection.7.2.7}{Root\040Mean\040Square\040Propagation\(RMSProp\)\040[Adaptive]}{section.7.2}% 89
-\BOOKMARK [2][-]{subsection.7.2.8}{AdaDelta\040[Adaptive]}{section.7.2}% 90
-\BOOKMARK [2][-]{subsection.7.2.9}{Adam\040[Momentum\040&\040Adaptive]}{section.7.2}% 91
-\BOOKMARK [2][-]{subsection.7.2.10}{Adam\040Max\040[Momentum\040&\040Adaptive]}{section.7.2}% 92
-\BOOKMARK [0][-]{chapter.8}{模型评估}{}% 93
-\BOOKMARK [1][-]{section.8.1}{经验误差与过拟合}{chapter.8}% 94
-\BOOKMARK [2][-]{subsection.8.1.1}{检测}{section.8.1}% 95
-\BOOKMARK [2][-]{subsection.8.1.2}{预防}{section.8.1}% 96
-\BOOKMARK [1][-]{section.8.2}{集合采样方法}{chapter.8}% 97
-\BOOKMARK [2][-]{subsection.8.2.1}{留出 \(Hold-out\)}{section.8.2}% 98
-\BOOKMARK [2][-]{subsection.8.2.2}{交叉检验 \(Cross Validation\)}{section.8.2}% 99
-\BOOKMARK [2][-]{subsection.8.2.3}{Bootstrapping}{section.8.2}% 100
-\BOOKMARK [1][-]{section.8.3}{评估模型性能}{chapter.8}% 101
-\BOOKMARK [2][-]{subsection.8.3.1}{均方误差 \(Mean Squared Error\)}{section.8.3}% 102
-\BOOKMARK [2][-]{subsection.8.3.2}{错误率 & 精度}{section.8.3}% 103
-\BOOKMARK [2][-]{subsection.8.3.3}{查准率}{section.8.3}% 104
-\BOOKMARK [2][-]{subsection.8.3.4}{查全率}{section.8.3}% 105
-\BOOKMARK [2][-]{subsection.8.3.5}{P-R曲线 & Break-Even Point}{section.8.3}% 106
-\BOOKMARK [2][-]{subsection.8.3.6}{受试者工作特征 \(Receiver Operating Characteristic\)}{section.8.3}% 107
-\BOOKMARK [2][-]{subsection.8.3.7}{代价敏感错误率}{section.8.3}% 108
-\BOOKMARK [2][-]{subsection.8.3.8}{假设检验 [统计假设检验]}{section.8.3}% 109
-\BOOKMARK [2][-]{subsection.8.3.9}{交叉验证t检验 [统计假设检验]}{section.8.3}% 110
-\BOOKMARK [2][-]{subsection.8.3.10}{McNemar 检验 [统计假设检验]}{section.8.3}% 111
-\BOOKMARK [1][-]{section.8.4}{偏差与方差}{chapter.8}% 112
+\BOOKMARK [0][-]{chapter.1}{所需知识}{}% 1
+\BOOKMARK [1][-]{section.1.1}{线性代数}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{正定矩阵 & 半正定矩阵}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{共轭转置}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{幺正矩阵 Unitary Matrix}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.4}{矩阵分解}{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{概率论}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{多维正态分布\(Multivariate Gaussian Distribution\)}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{Expectation-Maximization\040algorithm}{section.1.2}% 9
+\BOOKMARK [1][-]{section.1.3}{信息论}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.3.1}{信息熵}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.2}{交叉熵}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.3}{相对熵}{section.1.3}% 13
+\BOOKMARK [0][-]{chapter.1}{特征处理}{}% 14
+\BOOKMARK [1][-]{section.1.1}{特征缩放\(Feature Scaling\)}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.1.1}{作用}{section.1.1}% 16
+\BOOKMARK [2][-]{subsection.1.1.2}{方法}{section.1.1}% 17
+\BOOKMARK [1][-]{section.1.2}{特征选择\(Feature Selection\)}{chapter.1}% 18
+\BOOKMARK [2][-]{subsection.1.2.1}{手动特征选择}{section.1.2}% 19
+\BOOKMARK [2][-]{subsection.1.2.2}{Non-Negative\040Matrix\040Factorization}{section.1.2}% 20
+\BOOKMARK [2][-]{subsection.1.2.3}{Pooling}{section.1.2}% 21
+\BOOKMARK [2][-]{subsection.1.2.4}{过滤式选择}{section.1.2}% 22
+\BOOKMARK [2][-]{subsection.1.2.5}{包裹式选择}{section.1.2}% 23
+\BOOKMARK [2][-]{subsection.1.2.6}{稀疏表示 \(Sparse Representation\)}{section.1.2}% 24
+\BOOKMARK [2][-]{subsection.1.2.7}{字典学习 \(Dictionary Learning\)}{section.1.2}% 25
+\BOOKMARK [2][-]{subsection.1.2.8}{压缩感知 \(Compressed Sensing\)}{section.1.2}% 26
+\BOOKMARK [1][-]{section.1.3}{降维\(Dimensionality Reduction\)}{chapter.1}% 27
+\BOOKMARK [2][-]{subsection.1.3.1}{主成成分分析\(Principal Component Analysis\)}{section.1.3}% 28
+\BOOKMARK [2][-]{subsection.1.3.2}{自动编码机\(Auto-Encoder\)}{section.1.3}% 29
+\BOOKMARK [2][-]{subsection.1.3.3}{流形学习 \(Manifold Learning\) }{section.1.3}% 30
+\BOOKMARK [2][-]{subsection.1.3.4}{多维缩放 \(Multiple Dimensional Scaling\)}{section.1.3}% 31
+\BOOKMARK [2][-]{subsection.1.3.5}{度量学习 \(Metric Learning\)}{section.1.3}% 32
+\BOOKMARK [0][-]{chapter.2}{模型}{}% 33
+\BOOKMARK [1][-]{section.2.1}{Linear\040Model}{chapter.2}% 34
+\BOOKMARK [1][-]{section.2.2}{Decision\040Tree}{chapter.2}% 35
+\BOOKMARK [1][-]{section.2.3}{Neural\040Network}{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.3.1}{Multilayer\040Perceptron}{section.2.3}% 37
+\BOOKMARK [1][-]{section.2.4}{Support\040Vector\040Machine}{chapter.2}% 38
+\BOOKMARK [1][-]{section.2.5}{K-neighbors}{chapter.2}% 39
+\BOOKMARK [1][-]{section.2.6}{Bayesian}{chapter.2}% 40
+\BOOKMARK [1][-]{section.2.7}{Gaussian\040Discriminant\040Analysis}{chapter.2}% 41
+\BOOKMARK [1][-]{section.2.8}{\(Probabilistic\)\040Graphical\040Models}{chapter.2}% 42
+\BOOKMARK [1][-]{section.2.9}{Latent\040Dirichlet\040Allocation\040[Topic\040Model]}{chapter.2}% 43
+\BOOKMARK [1][-]{section.2.10}{Latent\040Semantic\040Analysis\040[Topic\040Model]}{chapter.2}% 44
+\BOOKMARK [1][-]{section.2.11}{Probability\040Latent\040Semantic\040Analysis\040[Topic\040Model]}{chapter.2}% 45
+\BOOKMARK [0][-]{chapter.3}{损失函数}{}% 46
+\BOOKMARK [1][-]{section.3.1}{Regression\040Losses}{chapter.3}% 47
+\BOOKMARK [2][-]{subsection.3.1.1}{Mean\040Square\040Error}{section.3.1}% 48
+\BOOKMARK [2][-]{subsection.3.1.2}{Mean\040Absolute\040Error}{section.3.1}% 49
+\BOOKMARK [2][-]{subsection.3.1.3}{Mean\040Bias\040Error}{section.3.1}% 50
+\BOOKMARK [2][-]{subsection.3.1.4}{Logarithm\040of\040the\040hyperbolic\040cosin}{section.3.1}% 51
+\BOOKMARK [2][-]{subsection.3.1.5}{Huber\040Loss}{section.3.1}% 52
+\BOOKMARK [1][-]{section.3.2}{Classification\040Losses}{chapter.3}% 53
+\BOOKMARK [2][-]{subsection.3.2.1}{Hinge\040loss}{section.3.2}% 54
+\BOOKMARK [2][-]{subsection.3.2.2}{Logistic\040loss}{section.3.2}% 55
+\BOOKMARK [2][-]{subsection.3.2.3}{Exponential\040loss}{section.3.2}% 56
+\BOOKMARK [2][-]{subsection.3.2.4}{Cross\040Entropy\040Loss}{section.3.2}% 57
+\BOOKMARK [2][-]{subsection.3.2.5}{Multi\040class\040SVM\040Loss}{section.3.2}% 58
+\BOOKMARK [1][-]{section.3.3}{Relative\040Entropy}{chapter.3}% 59
+\BOOKMARK [1][-]{section.3.4}{Regularization}{chapter.3}% 60
+\BOOKMARK [0][-]{chapter.4}{激活函数}{}% 61
+\BOOKMARK [1][-]{section.4.1}{Sigmoid}{chapter.4}% 62
+\BOOKMARK [1][-]{section.4.2}{Hard\040Sigmoid}{chapter.4}% 63
+\BOOKMARK [1][-]{section.4.3}{Softmax}{chapter.4}% 64
+\BOOKMARK [1][-]{section.4.4}{Exponential\040Linear\040Unit}{chapter.4}% 65
+\BOOKMARK [1][-]{section.4.5}{Scaled\040Exponential\040Linear\040Unit}{chapter.4}% 66
+\BOOKMARK [1][-]{section.4.6}{Rectified\040Linear\040Unit}{chapter.4}% 67
+\BOOKMARK [1][-]{section.4.7}{Identity\040Activation\040Function}{chapter.4}% 68
+\BOOKMARK [1][-]{section.4.8}{Softplus}{chapter.4}% 69
+\BOOKMARK [1][-]{section.4.9}{Softsign}{chapter.4}% 70
+\BOOKMARK [1][-]{section.4.10}{Hyperbolic\040Tangent}{chapter.4}% 71
+\BOOKMARK [1][-]{section.4.11}{Exponential\040\(base\040e\)}{chapter.4}% 72
+\BOOKMARK [0][-]{chapter.5}{噪音}{}% 73
+\BOOKMARK [1][-]{section.5.1}{Gaussian\040Noise}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.2}{Gaussian\040Dropout}{chapter.5}% 75
+\BOOKMARK [1][-]{section.5.3}{Alpha\040Dropout}{chapter.5}% 76
+\BOOKMARK [0][-]{chapter.6}{初始化}{}% 77
+\BOOKMARK [1][-]{section.6.1}{Normal\040distribution}{chapter.6}% 78
+\BOOKMARK [1][-]{section.6.2}{Uniform\040distribution}{chapter.6}% 79
+\BOOKMARK [1][-]{section.6.3}{Truncated\040Normal\040distribution}{chapter.6}% 80
+\BOOKMARK [1][-]{section.6.4}{Variance\040Scaling}{chapter.6}% 81
+\BOOKMARK [1][-]{section.6.5}{Random\040Orthogonal\040Matrix}{chapter.6}% 82
+\BOOKMARK [0][-]{chapter.7}{优化器}{}% 83
+\BOOKMARK [1][-]{section.7.1}{Mini-batch\040Gradient\040descent}{chapter.7}% 84
+\BOOKMARK [1][-]{section.7.2}{Stochastic\040Gradient\040Descent}{chapter.7}% 85
+\BOOKMARK [2][-]{subsection.7.2.1}{Implicit-updates\040SGD}{section.7.2}% 86
+\BOOKMARK [2][-]{subsection.7.2.2}{Averaged\040SGD}{section.7.2}% 87
+\BOOKMARK [2][-]{subsection.7.2.3}{Kalman-Based\040SGD}{section.7.2}% 88
+\BOOKMARK [2][-]{subsection.7.2.4}{Momentum}{section.7.2}% 89
+\BOOKMARK [2][-]{subsection.7.2.5}{Nesterov\040Accelerated\040Gradient\040[Momentum]}{section.7.2}% 90
+\BOOKMARK [2][-]{subsection.7.2.6}{Adagrad\040[Adaptive]}{section.7.2}% 91
+\BOOKMARK [2][-]{subsection.7.2.7}{Root\040Mean\040Square\040Propagation\(RMSProp\)\040[Adaptive]}{section.7.2}% 92
+\BOOKMARK [2][-]{subsection.7.2.8}{AdaDelta\040[Adaptive]}{section.7.2}% 93
+\BOOKMARK [2][-]{subsection.7.2.9}{Adam\040[Momentum\040&\040Adaptive]}{section.7.2}% 94
+\BOOKMARK [2][-]{subsection.7.2.10}{Adam\040Max\040[Momentum\040&\040Adaptive]}{section.7.2}% 95
+\BOOKMARK [0][-]{chapter.8}{模型评估}{}% 96
+\BOOKMARK [1][-]{section.8.1}{经验误差与过拟合}{chapter.8}% 97
+\BOOKMARK [2][-]{subsection.8.1.1}{检测}{section.8.1}% 98
+\BOOKMARK [2][-]{subsection.8.1.2}{预防}{section.8.1}% 99
+\BOOKMARK [1][-]{section.8.2}{集合采样方法}{chapter.8}% 100
+\BOOKMARK [2][-]{subsection.8.2.1}{留出 \(Hold-out\)}{section.8.2}% 101
+\BOOKMARK [2][-]{subsection.8.2.2}{交叉检验 \(Cross Validation\)}{section.8.2}% 102
+\BOOKMARK [2][-]{subsection.8.2.3}{Bootstrapping}{section.8.2}% 103
+\BOOKMARK [1][-]{section.8.3}{评估模型性能}{chapter.8}% 104
+\BOOKMARK [2][-]{subsection.8.3.1}{均方误差 \(Mean Squared Error\)}{section.8.3}% 105
+\BOOKMARK [2][-]{subsection.8.3.2}{错误率 & 精度}{section.8.3}% 106
+\BOOKMARK [2][-]{subsection.8.3.3}{查准率}{section.8.3}% 107
+\BOOKMARK [2][-]{subsection.8.3.4}{查全率}{section.8.3}% 108
+\BOOKMARK [2][-]{subsection.8.3.5}{P-R曲线 & Break-Even Point}{section.8.3}% 109
+\BOOKMARK [2][-]{subsection.8.3.6}{受试者工作特征 \(Receiver Operating Characteristic\)}{section.8.3}% 110
+\BOOKMARK [2][-]{subsection.8.3.7}{代价敏感错误率}{section.8.3}% 111
+\BOOKMARK [2][-]{subsection.8.3.8}{假设检验 [统计假设检验]}{section.8.3}% 112
+\BOOKMARK [2][-]{subsection.8.3.9}{交叉验证t检验 [统计假设检验]}{section.8.3}% 113
+\BOOKMARK [2][-]{subsection.8.3.10}{McNemar 检验 [统计假设检验]}{section.8.3}% 114
+\BOOKMARK [1][-]{section.8.4}{偏差与方差}{chapter.8}% 115
